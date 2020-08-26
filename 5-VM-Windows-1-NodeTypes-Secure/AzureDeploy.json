@@ -4,28 +4,28 @@
   "parameters": {
     "clusterLocation": {
       "type": "string",
-      "defaultValue": "westus",
+      "defaultValue": "centralus",
       "metadata": {
         "description": "Location of the Cluster"
       }
     },
     "clusterName": {
       "type": "string",
-      "defaultValue": "GEN-UNIQUE",
+      "defaultValue": "sfc-vnet198",
       "metadata": {
         "description": "Name of your cluster - Between 3 and 23 characters. Letters and numbers only"
       }
     },
     "adminUserName": {
       "type": "string",
-      "defaultValue": "GEN-UNIQUE",
+      "defaultValue": "sfc-vnet198",
       "metadata": {
         "description": "Remote desktop user Id"
       }
     },
     "adminPassword": {
       "type": "securestring",
-      "defaultValue": "GEN-PASSWORD",
+      "defaultValue": "!1PassworD*8",
       "metadata": {
         "description": "Remote desktop user password. Must be a strong password"
       }
@@ -96,21 +96,21 @@
     },
     "certificateThumbprint": {
       "type": "string",
-      "defaultValue": "GEN-CUSTOM-DOMAIN-SSLCERT-THUMBPRINT",
+      "defaultValue": "F001760303D6AEB23FC8485D68F79A8082CAE8B0",
       "metadata": {
         "description": "Certificate Thumbprint"
       }
     },
     "sourceVaultValue": {
       "type": "string",
-      "defaultValue": "GEN-KEYVAULT-RESOURCE-ID",
+      "defaultValue": "/subscriptions/76049394-6881-469f-82ff-a5336861d0a5/resourceGroups/poc-vmrg/providers/Microsoft.KeyVault/vaults/sf-poc-cert-kv",
       "metadata": {
         "description": "Resource Id of the key vault, is should be in the format of /subscriptions/<Sub ID>/resourceGroups/<Resource group name>/providers/Microsoft.KeyVault/vaults/<vault name>"
       }
     },
     "certificateUrlValue": {
       "type": "string",
-      "defaultValue": "GEN-KEYVAULT-SSL-SECRET-URI",
+      "defaultValue": "https://sf-poc-cert-kv.vault.azure.net/secrets/sf-poc-cert/4cc001cf22824e64b0b3757c13a717bf",
       "metadata": {
         "description": "Refers to the location URL in your key vault where the certificate was uploaded, it is should be in the format of https://<name of the vault>.vault.azure.net:443/secrets/<exact location>"
       }
