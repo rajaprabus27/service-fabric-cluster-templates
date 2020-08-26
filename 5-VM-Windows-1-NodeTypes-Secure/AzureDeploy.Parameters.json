@@ -3,16 +3,16 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "clusterLocation": {
-      "value": "westus"
+      "value": "centralus"
     },
     "clusterName": {
-      "value": "GEN-UNIQUE"
+      "value": "sfc-vnet198"
     },
     "adminUserName": {
-      "value": "GEN-UNIQUE"
+      "value": "sfc-vnet198"
     },
     "adminPassword": {
-      "value": "GEN-PASSWORD"
+      "value": "!1PassworD*8"
     },
     "vmImagePublisher": {
       "value": "MicrosoftWindowsServer"
@@ -39,13 +39,13 @@
       "value": "My"
     },
     "certificateThumbprint": {
-      "value": "GEN-SF-CERT-THUMBPRINT"
+      "value": "F001760303D6AEB23FC8485D68F79A8082CAE8B0"
     },
     "sourceVaultValue": {
-      "value": "GEN-KEYVAULT-RESOURCE-ID"
+      "value": "/subscriptions/76049394-6881-469f-82ff-a5336861d0a5/resourceGroups/poc-vmrg/providers/Microsoft.KeyVault/vaults/sf-poc-cert-kv"
     },
     "certificateUrlValue": {
-      "value": "GEN-SF-CERT-URL"
+      "value": "https://sf-poc-cert-kv.vault.azure.net/secrets/sf-poc-cert/4cc001cf22824e64b0b3757c13a717bf"
     },
     "storageAccountType": {
       "value": "Standard_LRS"
